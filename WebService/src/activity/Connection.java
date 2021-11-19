@@ -4,7 +4,6 @@ package activity;
 import entity.Source;
 import entity.StartInfo;
 import entity.Token;
-import threads.SourceThread;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -17,10 +16,6 @@ import java.util.List;
  */
 public class Connection {
     HttpURLConnection connection = null;
-
-    Token token = null;
-    boolean flagUrl = true;
-    int counter = 0;
 
     /**
      * Method for connecting with first url
